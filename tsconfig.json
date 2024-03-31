@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ESNext"
+        ],
+        "useDefineForClassFields": true,
+        "strict": true,
+        "module": "CommonJS",
+        "alwaysStrict": true,
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "isolatedModules": false,
+        "target": "ES6",
+        "outDir": "./lib",
+        "rootDir": "./",
+        "allowSyntheticDefaultImports": true,
+        "strictPropertyInitialization": false,
+        "resolveJsonModule": true
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "src/**/*.ts"
+    ]
+  }
