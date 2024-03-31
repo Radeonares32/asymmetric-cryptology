@@ -1,6 +1,6 @@
 {
   "name": "asymmetric-cryptology",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/src/main.js",
   "license": "MIT",
   "author": "Radeonares32",
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Radeonares32/asymmetric-crypto.git"
+    "url": "https://github.com/Radeonares32/asymmetric-cryptology.git"
   },
   "bugs": {
-    "url": "https://github.com/Radeonares32/asymmetric-crypto.git/issues"
+    "url": "https://github.com/Radeonares32/asymmetric-cryptology.git/issues"
   },
   "keywords": [
     "asymmetric",
