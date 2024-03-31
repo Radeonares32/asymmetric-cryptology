@@ -10,6 +10,7 @@
         "moduleResolution": "Node",
         "esModuleInterop": true,
         "isolatedModules": false,
+        "declaration": true,
         "target": "ES6",
         "outDir": "./lib",
         "rootDir": "./",
