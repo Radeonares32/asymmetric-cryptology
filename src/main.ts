@@ -4,8 +4,12 @@ import { Crypto } from "./crypto";
 export class AsymmetricEncryption {
   private key;
   private cryto: Crypto = new Crypto();
-  constructor() {
-    this.key = this.cryto.generateKey();
+  constructor(key?: string) {
+    if (key) {
+      this.key = key;
+    } else {
+      this.key = this.cryto.generateKey();
+    }
   }
   encrypt = async (data: any[] | any): Promise<any> => {
     if (Array.isArray(data)) {

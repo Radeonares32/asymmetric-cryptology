@@ -1,7 +1,7 @@
 export declare class AsymmetricEncryption {
     private key;
     private cryto;
-    constructor();
+    constructor(key?: string);
     encrypt: (data: any[] | any) => Promise<any>;
     decrypt: (data: any[] | any) => Promise<any>;
     getKey(): string;
