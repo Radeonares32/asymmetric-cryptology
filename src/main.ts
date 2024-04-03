@@ -1,9 +1,11 @@
 import { AES, enc } from "crypto-js";
+import { Crypto } from "./crypto";
 
 export class AsymmetricEncryption {
   private key;
-  constructor(key: string) {
-    this.key = key;
+  private cryto: Crypto = new Crypto();
+  constructor() {
+    this.key = this.cryto.generateKey();
   }
   encrypt = async (data: any[] | any): Promise<any> => {
     if (Array.isArray(data)) {
@@ -12,7 +14,7 @@ export class AsymmetricEncryption {
     const fieldToEncrypt = Object.keys(data);
     const encryptData: any = {};
     for (const field of fieldToEncrypt) {
-      console.log(data[field])
+      console.log(data[field]);
       encryptData[field] = this.encryptField(data[field]);
     }
     return encryptData;
@@ -28,12 +30,14 @@ export class AsymmetricEncryption {
     }
     return decryptData;
   };
+  getKey(): string {
+    return this.key;
+  }
   private encryptField = (data: any) => {
-    console.log(data)
+    console.log(data);
     return AES.encrypt(data.toString(), this.key).toString();
   };
   private decryptField = (data: any) => {
     return AES.decrypt(data.toString(), this.key).toString(enc.Utf8);
   };
 }
-
