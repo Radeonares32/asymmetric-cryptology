@@ -1,6 +1,6 @@
 {
   "name": "asymmetric-cryptology",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "lib/src/main.js",
   "license": "MIT",
   "author": "Radeonares32",
